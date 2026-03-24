@@ -1,0 +1,147 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(135deg,#22c55e,#16a34a);
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: .3s;
+}
+.btn:hover {
+  transform: scale(1.08);
+}
+
+.btn-outline {
+  border: 1px solid white;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.big-btn {
+  padding: 12px 24px;
+}
+
+/* FEATURE CARD */
+.feature-card {
+  background:#16383f;
+  padding:14px;
+  border-radius:12px;
+  text-align:center;
+  font-size: 13px;
+  transition:.3s;
+}
+.feature-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  background:#1f4f58;
+}
+
+/* CHIP */
+.chip {
+  background:#16383f;
+  padding:6px 12px;
+  border-radius:20px;
+  transition:.3s;
+}
+.chip:hover {
+  background:#22c55e;
+}
+
+/* PROFILE (FINAL CLEAN) */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #111;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 100px;
+  border-radius: 12px;
+}
+
+.profile-card div {
+  flex: 1;
+}
+
+/* PROFILE LINKS */
+.link {
+  background: #1e4d57;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.link:hover {
+  background: #22c55e;
+  transform: translateY(-2px);
+}
+
+/* FLEX LINKS */
+.profile-card .flex {
+  flex-wrap: wrap;
+}
+
+/* MOBILE PROFILE */
+@media(max-width:600px){
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  height: 260px;
+}
+
+.card {
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* POSITIONS */
+.c1 { transform: translateX(-50%) translateX(-140px) scale(.7); opacity:.3;}
+.c2 { transform: translateX(-50%) translateX(-70px) scale(.85); opacity:.6;}
+.c3 { transform: translateX(-50%) scale(1); z-index:10;}
+.c4 { transform: translateX(-50%) translateX(70px) scale(.85); opacity:.6;}
+.c5 { transform: translateX(-50%) translateX(140px) scale(.7); opacity:.3;}
+
+/* ARROWS */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #22c55e;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:.3s;
+}
+.nav:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* MOBILE */
+@media(max-width:500px){
+  .card { width:110px; }
+  .carousel { height: 220px; }
+}
